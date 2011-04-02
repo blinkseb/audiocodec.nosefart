@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="audiocodec.nosefart"
+  version="1.0.0"
+  name="NoseFart"
+  provider-name="Team XBMC">
+  <extension
+    point="xbmc.player.audiocodec"
+    library_linux="audiocodec_nosefart.so"
+    file_exts="nsf"
+    multi_track="yes"
+  />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">NES music decoder</summary>
+    <description lang="en">Support music from NES through nosefart</description>
+    <platform>linux</platform>
+  </extension>
+</addon>
