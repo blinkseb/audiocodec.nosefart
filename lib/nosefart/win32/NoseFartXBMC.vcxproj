@@ -11,19 +11,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>libNoseFartXBMC_dll</ProjectName>
+    <ProjectName>libNoseFartXBMC</ProjectName>
     <ProjectGuid>{17238C64-04D6-4B51-B205-4A5A84ADB9FA}</ProjectGuid>
     <RootNamespace>NoseFartXBMC</RootNamespace>
     <Keyword>ManagedCProj</Keyword>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <CLRSupport>false</CLRSupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <CLRSupport>false</CLRSupport>
   </PropertyGroup>
@@ -33,12 +33,10 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
-    <Import Project="..\..\project\VS2010Express\XBMC for Windows.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
-    <Import Project="..\..\project\VS2010Express\XBMC for Windows.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -89,14 +87,18 @@
       </Command>
     </PostBuildEvent>
     <CustomBuildStep>
-      <Command>copy /B /Y "$(TargetPath)" "$(SolutionDir)..\..\system\players\paplayer\$(TargetFileName)"</Command>
+      <Command>
+      </Command>
     </CustomBuildStep>
     <CustomBuildStep>
-      <Message>Copy output</Message>
+      <Message>
+      </Message>
     </CustomBuildStep>
     <CustomBuildStep>
-      <Outputs>$(SolutionDir)..\..\system\players\paplayer\$(TargetFileName)</Outputs>
-      <Inputs>$(TargetPath)</Inputs>
+      <Outputs>
+      </Outputs>
+      <Inputs>
+      </Inputs>
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -123,37 +125,28 @@
       </Command>
     </PostBuildEvent>
     <CustomBuildStep>
-      <Command>copy /B /Y "$(TargetPath)" "$(SolutionDir)..\..\system\players\paplayer\$(TargetFileName)"</Command>
+      <Command>
+      </Command>
     </CustomBuildStep>
     <CustomBuildStep>
-      <Message>Copy output</Message>
+      <Message>
+      </Message>
     </CustomBuildStep>
     <CustomBuildStep>
-      <Outputs>$(SolutionDir)..\..\system\players\paplayer\$(TargetFileName)</Outputs>
-      <Inputs>$(TargetPath)</Inputs>
+      <Outputs>
+      </Outputs>
+      <Inputs>
+      </Inputs>
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\cpu\nes6502\dis6502.c" />
-    <ClCompile Include="src\sndhrdw\fds_snd.c" />
-    <ClCompile Include="src\sndhrdw\fmopl.c" />
-    <ClCompile Include="src\log.c" />
-    <ClCompile Include="src\memguard.c" />
-    <ClCompile Include="src\sndhrdw\mmc5_snd.c" />
-    <ClCompile Include="src\cpu\nes6502\nes6502.c" />
-    <ClCompile Include="src\sndhrdw\nes_apu.c" />
-    <ClCompile Include="NoseFartDLL.cpp" />
-    <ClCompile Include="src\machine\nsf.c" />
-    <ClCompile Include="src\sndhrdw\vrc7_snd.c" />
-    <ClCompile Include="src\sndhrdw\vrcvisnd.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\sndhrdw\fds_snd.h" />
-    <ClInclude Include="src\sndhrdw\fmopl.h" />
-    <ClInclude Include="src\sndhrdw\mmc5_snd.h" />
-    <ClInclude Include="src\sndhrdw\nes_apu.h" />
-    <ClInclude Include="src\sndhrdw\vrc7_snd.h" />
-    <ClInclude Include="src\sndhrdw\vrcvisnd.h" />
+    <ClInclude Include="..\src\memguard.h" />
+    <ClInclude Include="..\src\sndhrdw\fds_snd.h" />
+    <ClInclude Include="..\src\sndhrdw\fmopl.h" />
+    <ClInclude Include="..\src\sndhrdw\mmc5_snd.h" />
+    <ClInclude Include="..\src\sndhrdw\nes_apu.h" />
+    <ClInclude Include="..\src\sndhrdw\vrc7_snd.h" />
+    <ClInclude Include="..\src\sndhrdw\vrcvisnd.h" />
     <ClInclude Include="src\cpu\nes6502\dis6502.h" />
     <ClInclude Include="src\log.h" />
     <ClInclude Include="src\memguard.h" />
@@ -162,6 +155,19 @@
     <ClInclude Include="src\osd.h" />
     <ClInclude Include="src\types.h" />
     <ClInclude Include="src\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\cpu\nes6502\dis6502.c" />
+    <ClCompile Include="..\src\cpu\nes6502\nes6502.c" />
+    <ClCompile Include="..\src\log.c" />
+    <ClCompile Include="..\src\machine\nsf.c" />
+    <ClCompile Include="..\src\memguard.c" />
+    <ClCompile Include="..\src\sndhrdw\fds_snd.c" />
+    <ClCompile Include="..\src\sndhrdw\fmopl.c" />
+    <ClCompile Include="..\src\sndhrdw\mmc5_snd.c" />
+    <ClCompile Include="..\src\sndhrdw\nes_apu.c" />
+    <ClCompile Include="..\src\sndhrdw\vrc7_snd.c" />
+    <ClCompile Include="..\src\sndhrdw\vrcvisnd.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

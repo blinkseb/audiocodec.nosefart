@@ -11,62 +11,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\cpu\nes6502\dis6502.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sndhrdw\fds_snd.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sndhrdw\fmopl.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\log.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\memguard.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sndhrdw\mmc5_snd.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\cpu\nes6502\nes6502.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sndhrdw\nes_apu.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="NoseFartDLL.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\machine\nsf.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sndhrdw\vrc7_snd.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sndhrdw\vrcvisnd.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\sndhrdw\fds_snd.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\sndhrdw\fmopl.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\sndhrdw\mmc5_snd.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\sndhrdw\nes_apu.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\sndhrdw\vrc7_snd.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\sndhrdw\vrcvisnd.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\cpu\nes6502\dis6502.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -91,5 +35,61 @@
     <ClInclude Include="src\version.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\memguard.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sndhrdw\fds_snd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sndhrdw\fmopl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sndhrdw\mmc5_snd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sndhrdw\nes_apu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sndhrdw\vrc7_snd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sndhrdw\vrcvisnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\memguard.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sndhrdw\fds_snd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sndhrdw\fmopl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sndhrdw\mmc5_snd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sndhrdw\nes_apu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sndhrdw\vrc7_snd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sndhrdw\vrcvisnd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\machine\nsf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cpu\nes6502\dis6502.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cpu\nes6502\nes6502.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

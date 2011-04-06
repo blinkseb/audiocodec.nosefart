@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "audiocodec.nosefart", "audiocodec.nosefart.vcxproj", "{B8F7BEED-419E-47E2-8152-2095CC857C1D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libNoseFartXBMC", "..\lib\nosefart\win32\NoseFartXBMC.vcxproj", "{17238C64-04D6-4B51-B205-4A5A84ADB9FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8F7BEED-419E-47E2-8152-2095CC857C1D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B8F7BEED-419E-47E2-8152-2095CC857C1D}.Debug|Win32.Build.0 = Debug|Win32
+		{B8F7BEED-419E-47E2-8152-2095CC857C1D}.Release|Win32.ActiveCfg = Release|Win32
+		{B8F7BEED-419E-47E2-8152-2095CC857C1D}.Release|Win32.Build.0 = Release|Win32
+		{17238C64-04D6-4B51-B205-4A5A84ADB9FA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{17238C64-04D6-4B51-B205-4A5A84ADB9FA}.Debug|Win32.Build.0 = Debug|Win32
+		{17238C64-04D6-4B51-B205-4A5A84ADB9FA}.Release|Win32.ActiveCfg = Release|Win32
+		{17238C64-04D6-4B51-B205-4A5A84ADB9FA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

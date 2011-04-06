@@ -1,0 +1,13 @@
+*.obj
+*.lib
+*.dll
+*.old
+*.sdf
+*.opensdf
+*.user
+*.suo
+
+windows/Debug/
+windows/Release/
+windows/ipch/
+windows/objs/
