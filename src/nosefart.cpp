@@ -179,7 +179,7 @@ int64_t Seek(AC_INFO* info, int64_t iSeekTime)
     return -1;
 
   NSF* pNsf = (NSF*)info->mod;
-  if (pNsf->globalpos > iSeekTime*48*2);
+  if (pNsf->globalpos > iSeekTime*48*2)
   {
     delete[] pNsf->buffer;
     StartPlayback(pNsf);
